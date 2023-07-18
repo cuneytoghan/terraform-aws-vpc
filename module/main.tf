@@ -1,8 +1,3 @@
-### INSTRUCTIONS ON HOW TO BUILD VPC
-
-### Please coppy paste below codes
-
-```
 module "vpc"{
     source = "../"
     cidr_block      = "10.0.0.0/16"
@@ -18,9 +13,7 @@ module "vpc"{
     }
 
 }
-```
-### Please add the following codes to get output
-````
+
 output vpc_id {
     value = module.vpc.vpc_id
 }
@@ -33,10 +26,3 @@ output public_subnet2{
 output public_subnet3{
   value       = module.vpc.public_subnet3
 }
-````
-```
-terraform init
-```
-```
-terraform apply
-```
